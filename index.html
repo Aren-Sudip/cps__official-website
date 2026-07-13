@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CPS official website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ============ SIDEBAR (always open on desktop, slide-in overlay on tablet/mobile) ============ -->
+    <div class="sidebar-overlay js-sidebar-close"></div>
+
+    <aside class="sidebar">
+      <div class="sidebar__nav">
+        <div class="sidebar__nav-left">
+          <img
+            class="sidebar__burger js-sidebar-close"
+            src="images/Burger Icon Container (1).svg"
+            alt="close menu"
+          />
+          <img class="sidebar__logo" src="images/Logo Group.svg" alt="logo" />
+        </div>
+        <div class="sidebar__nav-right">
+          <img
+            class="sidebar__search-icon"
+            src="images/Search Icon Container.svg"
+            alt="search"
+          />
+        </div>
+      </div>
+
+      <div class="sidebar__body">
+        <ul class="sidebar__menu">
+          <li class="sidebar__menu-item sidebar__menu-item--muted">
+            Equipment Repair
+          </li>
+          <li class="sidebar__menu-item sidebar__menu-item--strong">
+            Services and solutions
+          </li>
+          <li class="sidebar__menu-item">Corporate clients</li>
+          <li class="sidebar__menu-item">Equipment sellers</li>
+          <li class="sidebar__menu-item">Partners</li>
+          <li class="sidebar__menu-item">Manufacturers</li>
+          <li class="sidebar__menu-item">Our Service centres</li>
+          <li class="sidebar__menu-item">Contacts</li>
+        </ul>
+
+        <div class="sidebar__footer">
+          <div class="sidebar__contact">
+            <div class="sidebar__contact-icons">
+              <img src="images/Call Icon Container.svg" alt="call" />
+              <img src="images/Chat Icon Container.svg" alt="chat" />
+              <img src="images/Profile Icon Container.svg" alt="profile" />
+            </div>
+            <div class="sidebar__contact-email">mail@cps.com</div>
+            <div class="sidebar__contact-phone">8 800 890 8900</div>
+          </div>
+
+          <div class="sidebar__lang">
+            <span class="sidebar__lang-item sidebar__lang-item--active"
+              >RU</span
+            >
+            <span class="sidebar__lang-item">EN</span>
+            <span class="sidebar__lang-item">CH</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ============ MAIN CONTENT (everything to the right of the sidebar) ============ -->
+    <div class="page__content">
+      <!-- ---- Mobile header (< 735px) ---- -->
+      <header class="mobile-header">
+        <div class="mobile-header__nav">
+          <div class="mobile-header__nav-left">
+            <img
+              class="mobile-header__burger js-sidebar-toggle"
+              src="images/Burger Icon Container.svg"
+              alt="menu"
+            />
+            <img
+              class="mobile-header__logo"
+              src="images/Logo Group.svg"
+              alt="logo"
+            />
+          </div>
+          <div class="mobile-header__nav-right">
+            <img src="images/Icon (1).svg" alt="repair" />
+            <img src="images/Icon (2).svg" alt="status" />
+          </div>
+        </div>
+      </header>
+
+      <!-- ---- Desktop / tablet header (>= 735px) ---- -->
+      <header class="header">
+        <div class="header__tablet-bar">
+          <div class="header__tablet-row">
+            <img
+              class="header__tablet-burger js-sidebar-toggle"
+              src="images/Burger Icon Container.svg"
+              alt="menu"
+            />
+            <div class="header__tablet-inner">
+              <div class="header__tablet-logo">
+                <img src="images/Logo Group.svg" alt="logo" />
+              </div>
+              <div class="header__tablet-icons">
+                <img src="images/Call Icon Container.svg" alt="call" />
+                <img src="images/Chat Icon Container.svg" alt="chat" />
+                <img src="images/Profile Icon Container.svg" alt="profile" />
+              </div>
+            </div>
+            <div class="header__tablet-actions">
+              <img src="images/Icon (1).svg" alt="repair" />
+              <img src="images/Icon (2).svg" alt="status" />
+            </div>
+          </div>
+        </div>
+
+        <div class="header__window">
+          <div class="header__nav">
+            <span class="header__nav-title">Services and support</span>
+            <div class="header__nav-icons">
+              <div class="header__nav-item">
+                <span class="header__nav-item-label">Submit a request</span>
+                <img
+                  class="header__nav-item-icon"
+                  src="images/Icon (1).svg"
+                  alt="repair"
+                />
+              </div>
+              <div class="header__nav-item">
+                <span class="header__nav-item-label">Repair Status</span>
+                <img
+                  class="header__nav-item-icon"
+                  src="images/Icon (2).svg"
+                  alt="status"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="header__tags">
+            <input
+              type="text"
+              name="Brands"
+              placeholder="Brands we repair"
+              class="header__search-input"
+            />
+            <input
+              type="text"
+              name="Brands"
+              placeholder="Devices we repair"
+              class="header__search-input header__search-input--medium"
+            />
+            <span class="header__tag header__tag--additional-services"
+              >Additional Services</span
+            >
+            <span class="header__tag header__tag--devices"
+              >Devices we repair</span
+            >
+            <span class="header__tag header__tag--prices">Service prices</span>
+            <span class="header__tag header__tag--addresses"
+              >Addresses of service centres</span
+            >
+            <span class="header__tag header__tag--special-prices"
+              >Special prices</span
+            >
+            <span class="header__tag header__tag--reviews">Reviews</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- ---- Mobile main (< 735px) ---- -->
+      <main class="mobile-main">
+        <div class="mobile-main__title">Services and Support</div>
+
+        <div class="mobile-main__filter">
+          <input
+            class="mobile-main__search"
+            type="text"
+            placeholder="Devices we repair"
+          />
+          <div class="mobile-main__tag">Additional Services</div>
+        </div>
+
+        <div class="mobile-main__content">
+          <div class="mobile-main__text">
+            We are an authorised service centre for Dell equipment repairs. Only
+            with us can you repair your Dell laptop with the official
+            manufacturer's warranty.
+          </div>
+          <div class="mobile-main__readmore">
+            <img
+              class="mobile-main__readmore-icon"
+              src="images/Icon (3).svg"
+              alt="arrow"
+            />
+            <span class="mobile-main__readmore-label">Read more</span>
+          </div>
+          <div class="mobile-main__image-wrap">
+            <img
+              class="mobile-main__image"
+              src="images/Image container.png"
+              alt="a photo of CPS"
+            />
+          </div>
+        </div>
+      </main>
+
+      <!-- ---- Desktop / tablet hero (>= 735px) ---- -->
+      <section class="hero">
+        <div class="hero__tablet-left">
+          <div class="hero__text">
+            <div class="hero__text-primary">
+              We are an authorised service centre for Dell equipment repairs.
+              Only with us can you repair your Dell laptop with the official
+              manufacturer's warranty.
+            </div>
+            <div class="hero__text-secondary">
+              We have been successfully operating since 1992 and have earned a
+              reputation as a reliable partner, as evidenced by our large number
+              of loyal customers. We take pride in the fact that clients come to
+              us through recommendations and, in turn, recommend us to their
+              family and friends.
+            </div>
+          </div>
+          <div class="hero__readmore">
+            <span class="hero__readmore-icon"
+              ><img src="images/Icon (3).svg" alt="double down arrow"
+            /></span>
+            Read More
+          </div>
+        </div>
+
+        <div class="hero__tablet-right">
+          <div class="hero__image-wrap">
+            <img
+              class="hero__image"
+              src="images/Image container.png"
+              alt="a photo of CPS"
+            />
+          </div>
+        </div>
+
+        <div class="hero__text hero__text--full">
+          <div class="hero__text-primary">
+            We are an authorised service centre for Dell equipment repairs. Only
+            with us can you repair your Dell laptop with the official
+            manufacturer's warranty.
+          </div>
+          <div class="hero__text-secondary">
+            We have been successfully operating since 1992 and have earned a
+            reputation as a reliable partner, as evidenced by our large number
+            of loyal customers. We take pride in the fact that clients come to
+            us through recommendations and, in turn, recommend us to their
+            family and friends.
+          </div>
+        </div>
+        <div class="hero__readmore hero__readmore--full">
+          <span class="hero__readmore-icon"
+            ><img src="images/Icon (3).svg" alt="double down arrow"
+          /></span>
+          Read More
+        </div>
+        <div class="hero__image-wrap hero__image-wrap--full">
+          <img
+            class="hero__image hero__image--full"
+            src="images/Image container.png"
+            alt="a photo of CPS"
+          />
+        </div>
+      </section>
+
+      <!-- ---- Brands / repair partners section (carousel on mobile, grid on tablet+desktop) ---- -->
+      <section class="brands">
+        <h3 class="brands__title">Repair of equipments from various brands</h3>
+
+        <div class="brands__carousel swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide brands__slide">
+              <img src="images/lenovo.svg" alt="lenovo" />
+            </div>
+            <div class="swiper-slide brands__slide">
+              <img src="images/apple.svg" alt="apple" />
+            </div>
+            <div class="swiper-slide brands__slide">
+              <img src="images/samsung.svg" alt="samsung" />
+            </div>
+            <div class="swiper-slide brands__slide">
+              <img src="images/hp.svg" alt="hp" />
+            </div>
+            <div class="swiper-slide brands__slide">
+              <img src="images/bosch.svg" alt="bosch" />
+            </div>
+            <div class="swiper-slide brands__slide">
+              <img src="images/acer.svg" alt="acer" />
+            </div>
+            <div class="swiper-slide brands__slide">
+              <img src="images/sony.svg" alt="sony" />
+            </div>
+            <div class="swiper-slide brands__slide">
+              <img src="images/viewSonic.svg" alt="viewSonic" />
+            </div>
+            <div class="swiper-slide brands__slide">
+              <img src="images/lenovo.svg" alt="lenovo" />
+            </div>
+          </div>
+          <div class="brands__pagination swiper-pagination"></div>
+        </div>
+
+        <div class="brands__grid">
+          <div class="brands__logo">
+            <img src="images/lenovo.svg" alt="lenovo" />
+          </div>
+          <div class="brands__logo">
+            <img src="images/samsung.svg" alt="samsung" />
+          </div>
+          <div class="brands__logo">
+            <img src="images/apple.svg" alt="apple" />
+          </div>
+          <div class="brands__logo brands__logo--wide">
+            <img src="images/viewSonic.svg" alt="viewSonic" />
+          </div>
+          <div class="brands__logo">
+            <img src="images/bosch.svg" alt="bosch" />
+          </div>
+          <div class="brands__logo"><img src="images/hp.svg" alt="hp" /></div>
+          <div class="brands__logo">
+            <img src="images/acer.svg" alt="acer" />
+          </div>
+          <div class="brands__logo brands__logo--wide">
+            <img src="images/sony.svg" alt="sony" />
+          </div>
+          <div class="brands__logo">
+            <img src="images/lenovo.svg" alt="lenovo" />
+          </div>
+          <div class="brands__logo">
+            <img src="images/samsung.svg" alt="samsung" />
+          </div>
+          <div class="brands__logo">
+            <img src="images/apple.svg" alt="apple" />
+          </div>
+        </div>
+
+        <div class="brands__toggle js-brands-toggle">
+          <img class="brands__toggle-icon" src="images/Icon (3).svg" alt="" />
+          <span class="brands__toggle-label">Show all</span>
+        </div>
+      </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
