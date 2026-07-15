@@ -722,10 +722,34 @@ justify-content: space-between;
 align-items: center;
 width: 32%;
 max-width: 35%;
-
+padding: 10px;
+border-radius: 20px;
   border: none;
  background-color: #F8F8F8;
 }
+.service__prices__list--commercial-proposal-button:hover{
+
+background-color: #FF3E79;
+cursor:pointer;
+
+.service__prices__list--commercial-proposal-button-right-arrow{
+color: #ffffff;
+}
+.service__prices__list--commercial-proposal-button-text{
+color: #ffffff;
+}
+
+
+}
+.service__prices__list--commercial-proposal-button-right-arrow:hover{
+color: #ffffff;
+
+cursor:pointer;
+
+
+
+}
+
 
 .service__prices__list--commercial-proposal-button-text{
 font-size: 1rem;
