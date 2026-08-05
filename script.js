@@ -53,14 +53,24 @@ brandsToggle.addEventListener('click', () => {
 });
 
 // ---------- Brands carousel (mobile only, hidden elsewhere via CSS) ----------
-const brandsSwiper = new Swiper('.brands__carousel', {
-  slidesPerView: 1.9,
-  centeredSlides: true,
-  spaceBetween: 0,
-  observer: true,
-  observeParents: true,
+   const brandsSwiper = new Swiper('.brands__carousel', {
+      loop: true,
+  slidesPerView: 1.15,
+  spaceBetween:16,
+  centeredSlides: false,
   pagination: {
     el: '.brands__pagination',
+    clickable: true,
+  },
+});
+
+const swiperRepair = new Swiper ('.swiper.repair',{
+  loop: true,
+  slidesPerView: 1.2,
+  spaceBetween:16,
+  centeredSlides: false,
+  pagination: {
+    el: '.swiper-pagination',
     clickable: true,
   },
 });

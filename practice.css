@@ -1,0 +1,71 @@
+@media (max-width: 734px){
+
+.devices__flex-items.devices__flex--laptop {
+  margin: 20px 20px;
+  padding: 15px 20px;
+  width: 240px;
+  height: 160px;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  &:hover {
+    background-color: #ff3e79;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+.devices__flex--items-text.devices__flex--laptop--text {
+  color: #1b1c21;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.devices__flex--laptop-icon {
+  display: flex;
+  align-items: flex-end;
+}
+
+  .swiper.repair{
+  width: 90%;
+  border: 1px solid red;
+height: 400px;
+display: flex;
+
+justify-content: center;
+align-items: center;
+overflow-x: auto;
+position: relative;
+  }
+  .swiper::-webkit-scrollbar {
+  display: none;  
+  }
+
+    
+  .swiper-wrapper.repair{
+    width: 100%;
+    height: 200px;
+    border: 1px solid blue;
+    /* height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+
+  }
+
+.slide.repair{
+
+background-color: gray;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+}
