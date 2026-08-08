@@ -17,7 +17,6 @@
 body {
   background-color: #f8f8f8;
   color: #1b1c21;
-  overflow-x: hidden;
   cursor: pointer;
 }
 
@@ -313,6 +312,7 @@ body {
   justify-content: center;
   background-color: #f8f8f8;
   padding: 20px;
+
 }
 .brands__grid > .brands__logo {
   &:hover {
@@ -327,8 +327,7 @@ body {
   padding: 20px;
 }
 
-.brands__carousel,
-.brands__pagination {
+.brands__carousel{
   display: none;
 }
 
@@ -913,7 +912,7 @@ min-height: 40%;
   }
 
   .brands {
-    max-width: 734px;
+    max-width: 1000px;
     width: 100%;
     height: 50%;
     min-height: 200px;
@@ -935,41 +934,77 @@ min-height: 40%;
 
   .brands__carousel {
     width: 100%;
-    overflow: hidden;
+    overflow: scroll;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
       background-color: #f8f8f8;
-  width: 100%;
-  min-height: 200px;
+
+  /* min-height: 200px; */
+  }
+  .brands__carousel::-webkit-scrollbar{
+    display: none;
+  }
+  .brands__carousel.repair{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px;
+
+
   }
 
 
   .brands__slide{
-    height:160px;
-  
+    height:200px;
 
     display:flex;
     align-items:center;
-    justify-content:space-between;
+    /* justify-content:space-between; */
 
     padding:0 4px;
-    box-sizing:border-box;
-}
-  
-  .brands__slide img {
 
-    width: 100%;
-    min-height: 30px;
-
-    object-fit: cover;
   }
+  .brands__images{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .brands__slide.repair{
+    margin: 20px 16px;
+      padding: 15px 20px;
+      width: 240px;
+      height: 160px;
+      border: 1px solid #eaeaea;
+      border-radius: 6px;
+      display: flex;
+      justify-content: space-between;
+  }
+.brands__slide.services{
+    margin: 30px 16px;
+      padding: 15px 20px;
+      width: 240px;
+      height: 190px;
+      border: 1px solid #eaeaea;
+      border-radius: 6px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-around;
+}
 
   .brands__pagination {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
+
+  }
+  .brands__pagination.swiper-pagination.services{
+    margin-top: 40px;
 
   }
 
@@ -984,6 +1019,23 @@ min-height: 40%;
     background:#0429fa;
 }
 
+
+
+.slide__text{
+  display: flex;
+flex-direction: column;
+justify-content: flex-start;
+min-height: 130px;
+}
+
+.repair__icon{
+  display: flex;
+flex-direction: column;
+justify-content: flex-end;
+min-height: 130px;
+}
+
+
 .devices__flex--items-show{
   display: none;
 }
@@ -996,13 +1048,14 @@ min-height: 40%;
     letter-spacing: -0.2px;
     padding: 10px;
   }
-.swiper-pagination{
-  display: flex;
-}
-.service__prices{
 
-
+.devices__flex,.service__prices,.main-footer{
   display: none;
 }
+
+
+
+
+
 
 }
