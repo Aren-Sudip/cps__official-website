@@ -55,7 +55,7 @@ brandsToggle.addEventListener('click', () => {
 // ---------- Brands carousel (mobile only, hidden elsewhere via CSS) ----------
    const brandsSwiper = new Swiper('.brands__carousel', {
       loop: true,
-  slidesPerView: 1.35,
+  slidesPerView: 1.5,
   spaceBetween:16,
   centeredSlides: false,
   pagination: {
